@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-gray-800 text-white font-mono">
+    <nav class="sticky top-0 z-10">
+        <div class="flex justify-end">
+            <div class="hidden gap-6 md:flex  px-16 py-6 lg:text-xl">
+                <a href="" class="hover:text-green-500 hover:underline py-2">Home</a>
+                <a href="" class="hover:text-green-500 hover:underline py-2">Services</a>
+                <a href="" class="hover:text-green-500 hover:underline py-2">Resume</a>
+                <a href="#project" class="hover:text-green-500 hover:underline py-2">Projects</a>
+                <a href="#contact" class="hover:text-green-500 hover:underline py-2">Contact</a>
+                <a href="" class=" flex px-6 py-1 bg-green-500 rounded-3xl items-center text-black hover:text-white hover:bg-gray-700">Hire me</a>
+            </div>
+            <button class=" md:hidden p-3" onclick="handleMenu()">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div id="nav-dialog" class="fixed md:hidden bg-gray-800 inset-1 p-3">
+                <div class="flex justify-end">
+
+                    <button class=" md:hidden" onclick="handleMenu()">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                            height="20px"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-col p-5">
+                    <a href="" class="hover:text-green-500 hover:underline py-1">Home</a>
+                    <a href="" class="hover:text-green-500 hover:underline py-1">Services</a>
+                    <a href="" class="hover:text-green-500 hover:underline py-1">Resume</a>
+                    <a href="#project" class="hover:text-green-500 hover:underline py-1">Projects</a>
+                    <a href="#contact" class="hover:text-green-500 hover:underline py-1">Contact</a>
+                    <span class="mt-4">
+                        <a href="" class=" px-6 py-2 bg-green-500 rounded-3xl text-black">Hire me</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="main-content" class="flex transition-opacity duration-300 md:pb-14">
+        <div class="flex gap-14 md:px-24 py-8 px-14">
+            <div class="w-[70%] md:w-[50%] py-8 relative">
+                <p class="text-gray-300 ">Web Developer</p>
+                <h1 class="text-3xl md:text-4xl font-bold pt-2 animate-pulse">Hello I'm</h1>
+                <h1 class="text-3xl md:text-4xl  font-bold pb-4 text-green-400 md:ml-12 ml-6 ">Sumant</h1>
+                <p class="text-gray-300">"As a passionate web developer, With a strong foundation in HTML, CSS, and
+                    JavaScript, I've honed my skills in building responsive, user-friendly interfaces with Tailwind CSS
+                    and React js</p>
+                <button class="rounded-3xl border-2 border-green-400 px-3 py-1 mt-3 animate-spintext-green-400">Download
+                    cv</button>
+            </div>
+            <div class="mt-12 left-[58%] absolute">
+                <img class="p-1 md:p-2 h-24 w-24 md:h-56 md:w-56 rounded-full object-contain border-4 border-dashed border-gray-700"
+                    src="../assests/profile-pic.png" alt="">
+            </div>
+        </div>
+        <div class="pt-40 px-4">
+           <a href="https://www.linkedin.com/in/sumant-raj-a41b88238/"> <img class="h-8 w-24 sm:h-12 sm:w-16 lg:h-14 lg:w-10 invert" src="../assests/linkd.svg" alt=""></a>
+           <a href="https://github.com/sumantraj1">
+           <img class="h-8 w-24 sm:h-12 sm:w-16 lg:h-14 lg:w-10 invert" src="../assests/git.svg" alt=""></a>
+
+           <a href="https://www.instagram.com/sumant_raj1/">
+            <img class="h-8 w-24 sm:h-12 sm:w-16 lg:h-14 lg:w-10 invert" src="../assests/insta.svg" alt=""></a>
+
+            <a href="https://x.com/Sumant_Raj12">
+            <img class="h-8 w-24 sm:h-12 sm:w-16 lg:h-14 lg:w-10 invert" src="../assests/twit.svg" alt=""></a>
+
+        </div>
+    </section>
+
+    <section class="flex flex-col items-center pb-10 mb-10">
+        <h1 class="p-4 text-2xl font-bold md:text-3xl lg:text-4xl text-green-400">My skills</h1>
+        <p class="p-4 mx-2 md:mx-16 lg:mx-32 text-gray-400">Passionate Frontend Developer with Expertise in React and Modern Web
+            Technologies.</p>
+        <div class="flex flex-wrap gap-2 md:gap-4 m-4">
+            <div class="bg-gray-700 rounded-md h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 flex items-center justify-center"><img
+                    class="h-8 w-8 sm:h-10 sm:w-10 md:h-14 md:w-14 invert" src="../assests/html.svg" alt=""></div>
+
+            <div class="bg-gray-700 rounded-md h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 flex items-center justify-center"><img
+                    class="h-8 w-8 sm:h-10 sm:w-10 md:h-14 md:w-14 invert" src="../assests/css.svg" alt=""></div>
+
+            <div class="bg-gray-700 rounded-md h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 flex items-center justify-center"><img
+                    class="h-8 w-8 sm:h-10 sm:w-10 md:h-14 md:w-14 invert" src="../assests/javascript.svg" alt=""></div>
+            <div class="bg-gray-700 rounded-md h-16 w-16 sm:h-20 sm:w-20  md:h-24 md:w-24 flex items-center justify-center"><img
+                    class="h-8 w-8 sm:h-10 sm:w-10 md:h-14 md:w-14" src="../assests/tailwind.svg" alt=""></div>
+            <div class="bg-gray-700 rounded-md h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 flex items-center justify-center"><img
+                    class="h-8 w-8 sm:h-10 sm:w-10 md:h-14 md:w-14 invert" src="../assests/react.svg" alt=""></div>
+        </div>
+    </section>
+
+    <section id="project" class="flex flex-col items-center pb-10 mb-4">
+        <h1 class="p-4 text-2xl lg:text-4xl font-bold md:text-3xl text-green-400">My Projects</h1>
+        <p class="p-4 mx-2 md:mx-16 lg:mx-32 text-gray-400">Developed responsive and visually appealing frontend applications, leveraging React and modern JavaScript libraries to create dynamic user interfaces. </p>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 m-4">
+
+           <a href=""> <div class="bg-gray-700 rounded-md h-40 w-72 md:h-48 md:w-80 my-6 p-2 flex items-center">
+                <img src="../assests/Screenshot 2024-09-15 003758.png" alt="">
+            </div></a>
+
+            <p class="sm:w-[40%] text-gray-300 mx-8">Spotify clone, featuring a working music player, multiple pages, and full responsiveness. This project was completed over several days, showcasing dedication and skill in
+                frontend development.</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 m-4">
+            <a href="">
+            <div class="bg-gray-700 rounded-md h-40 w-72 md:h-48 md:w-80 my-6 p-2 flex items-center">
+                <img src="../assests/Screenshot 2024-09-15 003829.png" alt="">
+            </div></a>
+            <p class="sm:w-[40%] text-gray-300 mx-8">a Netflix frontend clone, featuring essential design elements and functionality. This
+                project was completed in a single day, demonstrating rapid development skills.</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 m-4">
+            <a href="">
+            <div class="bg-gray-700 rounded-md h-40 w-72 md:h-48 md:w-80 my-6 p-2 flex items-center">
+                <img src="../assests/Screenshot 2024-09-15 003948.png" alt="">
+            </div></a>
+            <p class="sm:w-[40%] mx-8 text-gray-300">a basic Amazon frontend clone, The project highlights a robust user interface and
+                seamless navigation, replicating key features of the original site.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 m-4">
+            <a href="">
+            <div class="bg-gray-700 rounded-md h-40 w-72 md:h-48 md:w-80 my-6 p-2 flex items-center">
+                <img src="../assests/Screenshot 2024-09-15 003859.png" alt="">
+            </div></a>
+            <p class="sm:w-[40%] text-gray-300 mx-8">a fully functional calculator with an attractive and user-friendly interface. The project
+                combines sleek visuals with precise functionality for a seamless user experience.</p>
+        </div>
+
+    </section>
+
+    <section id="contact" class="lg:flex items-center justify-center mt-16">
+        <div class=" bg-gray-700 p-4 m-4 mx-10 sm:mx-20 rounded-md">
+            <h1 class="text-2xl font-bold text-green-400 p-2 text-center">Let's work together</h1>
+            <form>
+                <input type="text" class="rounded-sm bg-gray-800 p-1 mr-1 w-[46%] sm:w-[48%]" placeholder="First Name">
+                <input type="text" class="rounded-sm bg-gray-800 p-1 w-[46%] sm:w-[48%]"
+                    placeholder="Last Name"><br><br>
+                <input type="email" class="rounded-sm bg-gray-800 p-1 mr-1 w-[46%] sm:w-[48%]"
+                    placeholder="Email address">
+                <input type="tel" class="rounded-sm bg-gray-800 p-1 w-[46%] sm:w-[48%]" placeholder="Mobile No"><br><br>
+                <textarea class="rounded-sm bg-gray-800 p-1 w-[98%] h-32"
+                    placeholder="Type your message here."></textarea><br><br>
+                <button class="bg-green-400 text-black px-4 py-1 rounded-3xl" type="submit">Send message</button>
+            </form>
+
+        </div>
+
+        <div class="p-10 sm:m-10 ">
+            <div class="flex items-center gap-2">
+                <div class="h-12 w-12 m-2 bg-gray-700 flex items-center justify-center rounded-md">
+                    <img class="invert h-6 w-6" src="../assests/phone.svg" alt="">
+                </div>
+                <div>
+                    <p class="text-gray-500">Phone</p>
+                    <p class="text-gray-300">8102542256</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="h-12 w-12 m-2 bg-gray-700 flex items-center justify-center rounded-md">
+                    <img class="invert h-6 w-6" src="../assests/email.svg" alt="">
+                </div>
+                <div>
+                    <p class="text-gray-500">Email</p>
+                    <p class="text-gray-300">sumantraj603@gmail.com</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="h-12 w-12 m-2 bg-gray-700 flex items-center justify-center rounded-md">
+                    <img class="invert h-6 w-6" src="../assests/address.svg" alt="">
+                </div>
+                <div>
+                    <p class="text-gray-500">Address</p>
+                    <p class="text-gray-300">Boring Road, Patna</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
